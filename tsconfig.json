@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "noImplicitAny": false,
+    "outDir": "build",
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "files": [
+    "test/object-algebras/object-algebras-objects.spec.ts",
+    "test/object-algebras/object-algebras-classes.spec.ts",
+    "typings/tsd.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
