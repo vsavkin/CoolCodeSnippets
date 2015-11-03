@@ -2,8 +2,10 @@
  * Object Algebras Using Class-Based Syntax
  *
  * We start with two variants: lit and add, and one operation: print.
+ *
  * To add a new operation, uncomment EvalAddAlg.
  * Note, we did not have to change any existing code.
+ *
  * To add a new variant, uncomment MulAlg, PrintMulAlg, EvalMulAlg
  * Note, we did not have to change any existing code.
  */

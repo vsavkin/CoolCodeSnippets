@@ -2,12 +2,15 @@
  * Object Algebras Using Class-Based Syntax
  *
  * We start with two variants: lit and add, and one operation: print.
+ *
  * To add a new operation, uncomment EvalAddAlg.
  * Note, we did not have to change any existing code.
+ *
  * To add a new variant, uncomment MulAlg, PrintMulAlg, EvalMulAlg
  * Note, we did not have to change any existing code.
  */
 
+// just a helper function. can be ignored.
 function merge(a, b):any {
   var r = {};
   for (var attrname in a) { r[attrname] = a[attrname]; }
@@ -20,6 +23,7 @@ interface AddAlg<E> {
   add(a:E, b:E):E;
 }
 
+// UNCOMMENT TO ADD A NEW VARIANT
 //interface MultAlg<E> extends AddAlg<E> {
 //  mul(a:E, b:E): E;
 //}
@@ -30,17 +34,20 @@ var PrintAddAlg: AddAlg<PrintExp> = {
   add: (a:PrintExp, b:PrintExp) => () => `(${a()}) + (${b()})`
 };
 
+// UNCOMMENT TO ADD AN OPERATION
 //type EvalExp = () => number;
 //var EvalAddAlg: AddAlg<EvalExp> = {
 //  lit: (value:number) => () => value,
 //  add: (a:EvalExp, b:EvalExp) => () => a() + b()
 //};
 
+// UNCOMMENT TO ADD A NEW VARIANT
 //var PrintMulAlg: MultAlg<PrintExp> = merge(PrintAddAlg, {
 //  mul: (a:PrintExp, b:PrintExp) => () => `(${a()}) * (${b()})`
 //});
 //
-//
+
+// UNCOMMENT TO ADD A NEW VARIANT
 //var EvalMulAlg: MultAlg<EvalExp> = merge(EvalAddAlg, {
 //  mul: (a:EvalExp, b:EvalExp) => () => a() * b()
 //});
