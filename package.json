@@ -16,7 +16,10 @@
     "karma-webpack": "^1.7.0",
     "ts-loader": "^0.6.0",
     "tsd": "^0.6.5",
-    "typescript": "^1.6.2",
+    "typescript": "^1.7.0",
     "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "immutable": "^3.7.5"
   }
 }
